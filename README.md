@@ -1,18 +1,84 @@
-# React + Vite
+# Assembly Endgame
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**A small Hangman-style word-guessing game built with React for learning purposes.**  
+This project was created to practice React, Vite, and core frontend development concepts such as state management, event handling, and component design.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Demo
 
-## React Compiler
+**Live Demo:** https://ryanhollingsworth123.github.io/assembly-endgame/
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## About
 
-## Expanding the ESLint configuration
+Assembly Endgame is a simple interactive game where the player tries to guess a hidden word by selecting letters — similar to *Hangman*. The game tracks correct and incorrect guesses and provides dynamic visual feedback as the player progresses.
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+✔️ Guess letters to uncover a hidden word.  
+✔️ Interactive on-screen keyboard.  
+✔️ Dynamic tracking of correct and incorrect guesses.  
+✔️ Simple responsive UI built with React.  
+✔️ Built with Vite for fast development experience.
+
+---
+
+## Tech Stack
+
+- **Framework:** React  
+- **Bundler / Dev Server:** Vite  
+- **Styling:** CSS  
+- **JavaScript:** ES6+  
+- **Package Manager:** npm / Yarn
+
+---
+
+## Project Structure
+
+assembly-endgame/
+├── public/ # Static assets and HTML template
+├── src/ # React source files
+│ ├── App.jsx # Main application component
+│ ├── components/ # UI components
+│ ├── styles/ # CSS styles
+│ └── utils/ # Utility functions
+├── .gitignore
+├── index.html
+├── package.json # Scripts & dependencies
+├── vite.config.js # Vite configuration
+└── README.md
+
+---
+
+## Installation
+
+1. **Clone the repository**
+   ```sh
+   git clone https://github.com/ryanhollingsworth123/assembly-endgame.git
+Navigate into the project directory
+
+cd assembly-endgame
+Install dependencies
+
+npm install
+Start the development server
+
+npm run dev
+Open your browser and go to:
+
+http://localhost:5173/
+
+How to Play:
+
+Start the game — a hidden word will be selected.
+
+Click letters on the on-screen keyboard to guess.
+
+Correct guesses reveal those letters in the word.
+
+Incorrect guesses are tracked and reduce the remaining chances.
+
+Guess all letters before running out of chances to win!
